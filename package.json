@@ -1,0 +1,14 @@
+{
+  "name": "n8n-ai-automation-starter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check": "node scripts/check-workflows.mjs",
+    "format": "node scripts/check-workflows.mjs --write"
+  }
+}

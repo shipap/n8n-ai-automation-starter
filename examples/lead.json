@@ -1,0 +1,9 @@
+{
+  "name": "Morgan Demo",
+  "email": "morgan@northstar.example",
+  "company": "Northstar Gadgets",
+  "company_size": 24,
+  "budget": 8000,
+  "message": "We need to automate quote requests.",
+  "requested_service": "CRM automation"
+}

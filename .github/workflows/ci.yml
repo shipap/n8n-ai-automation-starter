@@ -1,0 +1,22 @@
+name: Validate workflows
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  workflows:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm test
+      - run: npm run check
+      - name: Validate Compose
+        env:
+          POSTGRES_PASSWORD: ci-only-not-a-real-password
+          N8N_ENCRYPTION_KEY: ci-only-not-a-real-encryption-key
+          N8N_RUNNERS_AUTH_TOKEN: ci-only-not-a-real-runner-token
+        run: docker compose config --quiet

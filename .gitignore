@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+backups/
+node_modules/
+coverage/
+*.log
+.DS_Store
+Thumbs.db
+.qa/

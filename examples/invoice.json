@@ -1,0 +1,22 @@
+{
+  "invoice": {
+    "invoice_number": "DEMO-2026-001",
+    "date": "2026-09-01",
+    "due_date": "2026-09-30",
+    "vendor": "Cedar Demo Studio",
+    "customer": "Northstar Demo Gadgets",
+    "currency": "USD",
+    "subtotal": 1000,
+    "tax": 100,
+    "total": 1100,
+    "line_items": [
+      {
+        "description": "Automation setup",
+        "quantity": 4,
+        "unit_price": 250,
+        "tax": 100,
+        "total": 1000
+      }
+    ]
+  }
+}

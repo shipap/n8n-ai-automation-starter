@@ -1,0 +1,5 @@
+{
+  "from": "customer@fictional.example",
+  "subject": "Refund request",
+  "message": "Please explain the refund process for a damaged item."
+}
